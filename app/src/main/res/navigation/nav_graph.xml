@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/choiceFragment">
+
+    <fragment
+        android:id="@+id/choiceFragment"
+        android:name="ru.anb.sportapp.ui.ChoiceFragment"
+        android:label="fragment_choice"
+        tools:layout="@layout/fragment_choice" >
+        <action
+            android:id="@+id/action_choiceFragment_to_choiceCountryFragment"
+            app:destination="@id/choiceCountryFragment" />
+        <action
+            android:id="@+id/action_choiceFragment_to_statisticsFragment"
+            app:destination="@id/statisticsFragment" />
+        <action
+            android:id="@+id/action_choiceFragment_to_newsFragment"
+            app:destination="@id/newsFragment" />
+        <action
+            android:id="@+id/action_choiceFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/choiceCountryFragment"
+        android:name="ru.anb.sportapp.ui.ChoiceCountryFragment"
+        android:label="fragment_choice_country"
+        tools:layout="@layout/fragment_choice_country" >
+        <action
+            android:id="@+id/action_choiceCountryFragment_to_tableFragment"
+            app:destination="@id/tableFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="ru.anb.sportapp.ui.StatisticsFragment"
+        android:label="fragment_statistics"
+        tools:layout="@layout/fragment_statistics" />
+    <fragment
+        android:id="@+id/tableFragment"
+        android:name="ru.anb.sportapp.ui.TableFragment"
+        android:label="fragment_table"
+        tools:layout="@layout/fragment_table" />
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="ru.anb.sportapp.ui.NewsFragment"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="ru.anb.sportapp.ui.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+</navigation>
