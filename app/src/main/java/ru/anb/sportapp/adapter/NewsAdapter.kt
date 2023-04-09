@@ -32,9 +32,9 @@ class NewsAdapter() : RecyclerView.Adapter<NewsAdapter.NewsViewHolder>() {
             Glide.with(imageView)
                 .load(item.img)
                 .into(imageView)
-            textView2
-            textView3
-            textView4
+            textView2.text = item.tittle
+            textView3.text = item.text
+            textView4.text = item.date
         }
     }
 
