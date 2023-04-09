@@ -9,9 +9,9 @@ import ru.anb.sportapp.api.ApiResult
 import ru.anb.sportapp.api.ApiService
 import ru.anb.sportapp.models.news.NewsItem
 
-class ViewModelNews(private val retrofit: ApiService): ViewModel() {
+class ViewModelNews(private val retrofit: ApiService) : ViewModel() {
 
-     var liveData =  MutableLiveData<ApiResult<List<NewsItem>>>()
+    var liveData = MutableLiveData<ApiResult<List<NewsItem>>>()
 
     init {
         loadNews()

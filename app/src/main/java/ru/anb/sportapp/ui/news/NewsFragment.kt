@@ -17,7 +17,7 @@ class NewsFragment : Fragment() {
     private var _binding: FragmentNewsBinding? = null
     private val mBinding get() = _binding!!
     private val newsAdapter: NewsAdapter = NewsAdapter()
-    private lateinit var  viewModel : ViewModelNews
+    private lateinit var viewModel: ViewModelNews
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

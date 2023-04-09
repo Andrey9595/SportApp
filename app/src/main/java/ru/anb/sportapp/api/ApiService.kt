@@ -5,6 +5,6 @@ import retrofit2.http.GET
 import ru.anb.sportapp.models.news.NewsItem
 
 interface ApiService {
-    @GET("news.json/")
+    @GET("news.json")
    suspend fun getNewsList(): Response<List<NewsItem>>
 }
